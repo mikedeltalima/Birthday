@@ -4,7 +4,7 @@
 quickSort <- function(vect) {
   # Args:
   #  vect: Numeric Vector
-  
+
   # Stop if vector has length of 1
   if (length(vect) <= 1) {
       return(vect)
@@ -21,3 +21,5 @@ quickSort <- function(vect) {
   v2 <- quickSort(v2)
   return(c(v1, element, v2))
 }
+
+quickSort(c(10, 2, 4, 1, -5, 7))
